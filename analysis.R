@@ -49,7 +49,7 @@ ggsurvplot(fit,
            palette = c("#E7B800", "#2E9FDF")
            )
 
-# Log test to compare the survival differences
+# Log-Rank test comparing survival curves
 surv_diff <- survdiff(Surv(time, status) ~ laser, data = diabetic2)
 
 

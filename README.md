@@ -21,3 +21,19 @@ A data frame with 394 observations on the following 8 variables.
 <tr><td>status</td><td>status of 0= censored or 1 = visual loss</td></tr>
 </table>
 
+**Analysis**
+<br><br>
+The average time of visual loss for the patients treated with Xenon laser was ~54.76 and the average time of visual loss for the patients who were treated with Argon laser was ~61.76.
+
+<br>
+<img src="graphs/KM_curve.jpg" alt="Girl in a jacket">
+
+<br>
+From the above curve we can observe that there is difference in the survival time of people who were treated with Xenon or Argon laser. 
+<br><br>
+
+**Log-Rank test**
+<br><br>
+The log-rank test resulted in a difference of Chisquared value 3 and a P-Value of 0.09, which is not significant. 
+
+
