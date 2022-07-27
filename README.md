@@ -20,10 +20,10 @@ A data frame with 394 observations on the following 8 variables.
 <tr><td>time</td><td>time to event or last follow-up</td></tr>
 <tr><td>status</td><td>status of 0= censored or 1 = visual loss</td></tr>
 </table>
-<br>
+<br><br>
 
 **Analysis**
-<br><br>
+
 The average time of visual loss for the patients treated with Xenon laser was ~54.76 and the average time of visual loss for the patients who were treated with Argon laser was ~61.76.
 <br>
 <table>
