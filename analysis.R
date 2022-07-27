@@ -30,6 +30,8 @@ summary(fit)
 # Access to the sort summary table
 summary(fit)$table
 
+
+# dataframe to create the Kaplan-Meire Curve
 d <- data.frame(time = fit$time,
                 n.risk = fit$n.risk,
                 n.event = fit$n.event,
@@ -38,9 +40,6 @@ d <- data.frame(time = fit$time,
                 upper = fit$upper,
                 lower = fit$lower
 )
-
-
-head(d)
 
 # Visualizing the Kaplan-Meire Curve
 ggsurvplot(fit,
