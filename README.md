@@ -20,7 +20,8 @@ A data frame with 394 observations on the following 8 variables.
 <tr><td>time</td><td>time to event or last follow-up</td></tr>
 <tr><td>status</td><td>status of 0= censored or 1 = visual loss</td></tr>
 </table>
-<br><br>
+
+<br>
 
 **Analysis**
 
@@ -32,7 +33,7 @@ The average time of visual loss for the patients treated with Xenon laser was ~5
 <tr><td>Xenon</td><td>83</td><td>83</td><td>83</td><td>18</td><td>61.76</td><td>2.77</td></tr>
 </table>
 
-<br><br>
+<br>
 
 <img src="graphs/KM_curve.png" alt="Girl in a jacket">
 
