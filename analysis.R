@@ -22,14 +22,11 @@ diabetic2 <- subset(diabetic, trt==1)
 # fitting the survival curve
 fit<-survfit(Surv(time, status) ~ laser, data=diabetic2)
 
-print(fit)
-
 # Summary of survival curves
 summary(fit)
 
 # Access to the sort summary table
 summary(fit)$table
-
 
 # dataframe to create the Kaplan-Meire Curve
 d <- data.frame(time = fit$time,
@@ -39,7 +36,7 @@ d <- data.frame(time = fit$time,
                 surv = fit$surv,
                 upper = fit$upper,
                 lower = fit$lower
-)
+                )
 
 # Visualizing the Kaplan-Meire Curve
 ggsurvplot(fit,
@@ -49,12 +46,11 @@ ggsurvplot(fit,
            linetype = "strata", # Change line type by groups
            surv.median.line = "hv", # Specify median survival
            ggtheme = theme_bw(), # Change ggplot2 theme
-           palette = c("#E7B800", "#2E9FDF"))
+           palette = c("#E7B800", "#2E9FDF")
+           )
 
-
-
-
-
+# Log test to compare the survival differences
+surv_diff <- survdiff(Surv(time, status) ~ laser, data = diabetic2)
 
 
 
